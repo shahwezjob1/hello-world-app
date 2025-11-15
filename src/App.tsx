@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Container, Typography, Box, Paper } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "linear-gradient(135deg, #e0f7fa 0%, #e8eaf6 100%)",
+      }}
+    >
+      <Container maxWidth="sm">
+        <Paper
+          elevation={3}
+          sx={{
+            padding: 4,
+            borderRadius: 4,
+            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            textAlign: "center",
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{
+              color: "white",
+              fontWeight: "bold",
+              textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
+            }}
+          >
+            Hey Shahwez Learn More React
+          </Typography>
+        </Paper>
+      </Container>
+    </Box>
   );
 }
 
